@@ -39,6 +39,12 @@ function mergeArrays(myArray, alicesArray) {
     return largeArray;
 }
 
+// could be done this way but it's not as efficient, it's O(nlogn) instead of O(n) because of the sort
+// const mergeArrays = (myArray, alicesArray) => {
+//     myArray = myArray.concat(alicesArray);
+//     return myArray.sort();
+// }
+
 // Tests
 
 let desc = 'both arrays are empty';
